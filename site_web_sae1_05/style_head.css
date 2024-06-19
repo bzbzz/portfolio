@@ -1,0 +1,192 @@
+
+header
+{
+    background-image: url(image/background.png);
+    width: 1280px;
+    height: 750px;
+
+}
+p
+{
+    color: white;
+    margin-left: 40px;
+    
+
+}
+figcaption
+{
+    color: white;
+}
+
+h1
+{
+    color: white;
+    font-size: 7em;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.top
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top ul
+{
+    
+    margin-right: 0px;
+
+}
+.top li
+{
+    display: inline-block;
+    margin: 0px;
+    line-height: 80px;
+}
+
+.recherche
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 24px;
+    background: rgba(34, 34, 152, 0.63);
+    transition: box-shodaow 0.25;
+    
+}
+.recherche:focus-within
+{
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.recherche-input
+{
+    font-size: 16px;
+    color:white;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.recherche-input::placeholder,.recherche-icone
+{
+    color:white;
+
+}
+
+.Logo
+{
+    margin: 0;
+    margin-top: 36px;
+}
+
+.serie
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.serie li
+{
+    display: inline-block;
+
+}
+
+.serie figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.serie figure {
+    display: flex;
+    align-items: center;
+}
+.texte
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.texte ul
+{
+    
+    margin-right: 0px;
+
+}
+.texte li
+{
+    display: inline-block;
+
+}
+
+.texte figure {
+    display: flex;
+    align-items: center;
+}
+
+.texte figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.texte img {
+    margin-left: 9px;
+}
+
+.texte a
+{
+    color: rgb(139, 137, 137);
+    text-decoration: none;
+}
+
+.menu
+{
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+   /* margin-top: 8.2em;*/
+
+}
+
+.menu li{
+    display: table-cell;
+    padding: 15px ;
+
+}
+
+.menu a
+{
+    color: rgb(130, 127, 127);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 1px 40px;
+
+}
+
+a:hover {
+    color: white;
+
+}
+
+.titre
+{
+    margin-top: 14.5em;
+}

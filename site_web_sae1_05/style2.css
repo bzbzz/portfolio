@@ -1,0 +1,574 @@
+body {
+    background-color: #19345A;
+    color: #ffff;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 5px 5px 15px black;
+}
+
+.notation {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating {
+    width: 300px;
+    margin: 0 auto 1em;
+    font-size: 45px;
+    overflow: hidden;
+}
+
+.rating a {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    /* Transitions sur chaque moteur de recherche */
+    -webkit-transition: color .4s;
+    /*Chrome et Safari*/
+    -moz-transition: color .4s;
+    /*Firefox*/
+    -o-transition: color .4s;
+    /*Opera*/
+    transition: color .4s;
+    /*changement dans le css*/
+}
+
+/************************ Lorsque les liens sont survolés ou en focus, la couleur du texte devient orange et le curseur change pour indiquer qu'ils sont interactifs. *****************************/
+.rating a:hover,
+.rating a:hover~a,
+.rating a:focus,
+.rating a:focus~a {
+    color: orange;
+    cursor: pointer;
+}
+
+/*************** Permet de mettre en surbrillance dans le bon ordre les étoiles ******************/
+.rating2 {
+    direction: rtl;
+}
+
+/******* Recentre les étoiles **********/
+.rating2 a {
+    float: none
+}
+
+
+/***********************************   SAISONS MENU DEROULANT   *******************************************/
+
+.season
+{
+    background: rgba(75, 75, 196, 0.245);
+    margin-left: 40px;
+    width: 10em;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    
+}
+
+
+.season ul
+{
+    list-style: none;
+
+}
+
+.season ul li
+{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 23px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    
+    
+
+}
+
+.season ul li a{
+    display: block;
+    padding: 1px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    
+
+}
+
+.season ul li ul.dropdown 
+{
+    display: none;
+    width: 100%;
+    background: rgba(138, 138, 191, 0.553);
+    position: absolute;
+    z-index: 1;
+    padding-left: 0;
+    
+
+}
+
+.season ul li a:hover
+{
+    background: rgba(249, 249, 249, 0.965);
+    display: block;
+    
+    
+
+}
+
+.season ul li:hover ul.dropdown
+{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    
+    
+  
+}
+
+
+/***********************************   HEADER   *******************************************/
+
+
+header
+{
+    background-image: url(html_images/ordi.jpg);
+    min-width: 1280px;
+    height: 1000px;
+    background-repeat: no-repeat;
+
+}
+.pHeader
+{
+    color: white;
+    margin-left: 40px;
+    
+
+}
+figcaption
+{
+    color: white;
+}
+
+.euphoria
+{
+    color: white;
+    font-size: 7em;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.top
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top ul
+{
+    
+    margin-right: 0px;
+
+}
+.top li
+{
+    display: inline-block;
+    margin: 0px;
+    line-height: 80px;
+}
+
+.recherche
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 24px;
+    background: rgba(34, 34, 152, 0.63);
+    transition: box-shodaow 0.25;
+    
+}
+.recherche:focus-within
+{
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.recherche-input
+{
+    font-size: 16px;
+    color:white;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.recherche-input::placeholder,.recherche-icone
+{
+    color:white;
+
+}
+
+.Logo
+{
+    margin: 0;
+    margin-top: 36px;
+}
+
+.serie
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.serie li
+{
+    display: inline-block;
+
+}
+
+.serie figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.serie figure {
+    display: flex;
+    align-items: center;
+}
+.texteHeader
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.texteHeader ul
+{
+    
+    margin-right: 0px;
+
+}
+.texteHeader li
+{
+    display: inline-block;
+
+}
+
+.texteHeader figure {
+    display: flex;
+    align-items: center;
+}
+
+.texteHeader figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.texteHeader img {
+    margin-left: 9px;
+}
+
+.texteHeader a
+{
+    color: rgb(139, 137, 137);
+    text-decoration: none;
+}
+
+.menu
+{
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+   /* margin-top: 8.2em;*/
+
+}
+
+.menu li{
+    display: table-cell;
+    padding: 15px ;
+
+}
+
+.menu a
+{
+    color: rgb(130, 127, 127);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 1px 40px;
+
+}
+
+a:hover {
+    color: white;
+
+}
+
+.titreHeader
+{
+    margin-top: 14.5em;
+}
+
+/***********************************    PROFILS   *******************************************/
+
+
+.profil {
+    border-radius: 100%;
+}
+
+.image1 {
+    display: flex;
+    clip-path: ellipse(33% 50%);
+}
+
+.image2 {
+    display: flex;
+    border-radius: 50vw;
+    clip-path: ellipse(30% 50%);
+}
+
+.arobase {
+    color: #a3a1a1;
+}
+
+.unique {
+    background: rgba(41, 41, 41, 0.75);
+    border-radius: 20px;
+    max-width: 600px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 2rem;
+}
+
+article {
+    overflow: scroll; 
+    text-align: justify;
+    max-width: 275px;
+    max-height: 8.5rem;
+    
+}
+
+article::-webkit-scrollbar
+{
+    display: none;
+
+}
+
+.blocMessages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 600px;
+}
+
+
+
+/***********************************   gros bloc du systeme de notation   *******************************************/
+
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+/***********************************    BLOCS   *******************************************/
+
+.journalEtNote
+{
+    display: flex;
+    flex-direction: row;
+}
+.GrosBloc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 180px;
+    background-color: #19345A;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 8%;
+    padding: 1.7%;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+    min-height: 100px;
+
+
+}
+
+
+.etoilesEntete,
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.texte1 {
+    text-align: justify;
+    
+}
+
+
+.ecrire {
+    margin: 10px;
+}
+
+.ecrire p:hover {
+    background-color: grey;
+    cursor: pointer;
+} 
+
+.entete2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.texte2 {
+
+    background-color: #0C0C0C;
+    padding: 15px;
+    flex-shrink: 0;
+
+}
+
+.nb {
+    color: #BAB6B6;
+}
+
+
+.voirplus {
+    display: flex;
+    width: 75px 0;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.critiques {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+
+/***********************************    MEDIA QUERRIES   *******************************************/
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 428px) {}
+
+@media screen and (max-width: 1142px) {
+    .critiques {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/* **********************************   BARRE DE NOTATION  ******************************************/
+
+.barre
+{
+    border-radius: 10rem;
+}
+/* **********************************    Menu déroulant   ******************************************/
+/*#wrap {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    z-index: 50;
+    position: relative;
+    background-color: black;
+}
+
+.navbar {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.navbar li {
+    height: auto;
+    width: 300px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 1.35em Arial, Verdana, Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.navbar a {
+    padding: 25px 0;
+    border-left: 1px solid #ccc9c9;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.navbar li:hover,
+a:hover {
+    background-color: grey;
+}
+
+.navbar li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+.ecrire p:hover {
+    background-color: grey;
+    cursor: pointer;
+} */ 
+
+.navbar li ul li {
+    background-color: #19345A;
+}
+
+.navbar li ul li a {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-top: 1px solid #c9d4d8;
+    border-bottom: 1px solid #444444;
+}
+
+.navbar li ul li a:hover {
+    background-color: #a3a1a1;
+}
+
+

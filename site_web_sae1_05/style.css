@@ -1,0 +1,296 @@
+body {
+    background-color: #19345A;
+    color: #ffff;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 5px 5px 15px black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*******************            BLOCS           **********************************/
+
+.grosBloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #7578CF;
+    border-radius: 20px;
+    margin: 5rem;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+}
+
+.petitBloc {
+    background-color: rgba(25, 52, 90, 0.85);
+    border-radius: 20px;
+    max-width: 465px;
+    min-height: 10em;
+    margin: 25px;
+    display: flex;
+    flex-direction: row ;
+    box-shadow: 5px 5px 15px black;
+}
+
+.petitBloc2 {
+    background-color: rgba(25, 52, 90, 0.85);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    min-height: 320px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px black;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.childPetitBloc{
+    background-color: #19345A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 15px black;
+    padding: 2px 10px 2px ;
+}
+.childPetitBlocSpe
+{
+    background-color: #19345A;
+    border-radius: 20px;
+    padding: 2px 10px 2px;
+    box-shadow: 5px 5px 15px black;
+}
+.childPetitBloc2
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/*******************            TEXTES          **********************************/
+
+.article
+{
+    overflow: scroll; 
+    text-align: justify;
+    max-width: 275px;
+    max-height: 8.5rem;
+}
+.article::-webkit-scrollbar
+{
+    display: none;
+}
+.titre {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.paragraphe {
+    text-align: justify;
+    margin-right: 3%;
+}
+
+.sousTitre
+{
+    color: #BAB6B6;
+}
+
+
+header
+{
+    background-image: url(image/background.png);
+    width: 1280px;
+    height: 750px;
+
+}
+.pHeader
+{
+    color: white;
+    margin-left: 40px;
+    
+
+}
+figcaption
+{
+    color: white;
+}
+
+.euphoria
+{
+    color: white;
+    font-size: 7em;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.top
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top ul
+{
+    
+    margin-right: 0px;
+
+}
+.top li
+{
+    display: inline-block;
+    margin: 0px;
+    line-height: 80px;
+}
+
+.recherche
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 24px;
+    background: rgba(34, 34, 152, 0.63);
+    transition: box-shodaow 0.25;
+    
+}
+.recherche:focus-within
+{
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.recherche-input
+{
+    font-size: 16px;
+    color:white;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.recherche-input::placeholder,.recherche-icone
+{
+    color:white;
+
+}
+
+.Logo
+{
+    margin: 0;
+    margin-top: 36px;
+}
+
+.serie
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.serie li
+{
+    display: inline-block;
+
+}
+
+.serie figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.serie figure {
+    display: flex;
+    align-items: center;
+}
+.texteHeader
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.texteHeader ul
+{
+    
+    margin-right: 0px;
+
+}
+.texteHeader li
+{
+    display: inline-block;
+
+}
+
+.texteHeader figure {
+    display: flex;
+    align-items: center;
+}
+
+.texteHeader figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.texteHeader img {
+    margin-left: 9px;
+}
+
+.texteHeader a
+{
+    color: rgb(139, 137, 137);
+    text-decoration: none;
+}
+
+.menu
+{
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+   /* margin-top: 8.2em;*/
+
+}
+
+.menu li{
+    display: table-cell;
+    padding: 15px ;
+
+}
+
+.menu a
+{
+    color: rgb(130, 127, 127);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 1px 40px;
+
+}
+
+a:hover {
+    color: white;
+
+}
+
+.titreHeader
+{
+    margin-top: 14.5em;
+}

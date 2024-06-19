@@ -1,0 +1,369 @@
+body {
+    background-color: #19345A;
+    color: #ffff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: fit-content;
+    text-shadow: 5px 5px 15px black;
+   }
+
+header
+{
+    background-image: url(image/background.png) ;
+    background-repeat: no-repeat;
+}
+
+p
+{
+    color: white;
+    margin-left: 40px;
+    
+}
+figcaption
+{
+    color: white;
+}
+
+h1
+{
+    color: white;
+    font-size: 7em;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.top
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top ul
+{
+    
+    margin-right: 0px;
+
+}
+.top li
+{
+    display: inline-block;
+    margin: 0px;
+    line-height: 80px;
+}
+
+.recherche
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 24px;
+    background: rgba(34, 34, 152, 0.63);
+    transition: box-shodaow 0.25;
+    
+}
+.recherche:focus-within
+{
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.recherche-input
+{
+    font-size: 16px;
+    color:white;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.recherche-input::placeholder,.recherche-icone
+{
+    color:white;
+
+}
+
+.Logo
+{
+    margin: 0;
+    margin-top: 36px;
+}
+
+.serie
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.serie li
+{
+    display: inline-block;
+
+}
+
+.serie figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.serie figure {
+    display: flex;
+    align-items: center;
+}
+
+.season
+{
+    background: rgba(75, 75, 196, 0.245);
+    margin-left: 40px;
+    width: 10em;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    
+}
+.season ul
+{
+    list-style: none;
+
+}
+
+.season ul li
+{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 23px;
+
+}
+
+.season ul li a{
+    display: block;
+    padding: 1px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+
+}
+
+
+.season ul li ul.dropdown li{
+    display: block;
+
+}
+
+.season ul li ul.dropdown 
+{
+    width: 100%;
+    background: rgba(138, 138, 191, 0.553);
+    position: absolute;
+    z-index: 1;
+    display: none;
+
+}
+
+.season ul li a:hover
+{
+    background: rgba(249, 249, 249, 0.965);
+
+}
+
+.season ul li:hover ul.dropdown
+{
+    display: inline-block;
+  
+}
+
+
+.texte
+{
+    display: flex;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    margin-left: 40px;
+}
+
+.texte ul
+{
+    
+    margin-right: 0px;
+
+}
+.texte li
+{
+    display: inline-block;
+
+}
+
+.texte figure {
+    display: flex;
+    align-items: center;
+}
+
+.texte figcaption 
+{
+    color: rgb(139, 137, 137);
+    margin-left: 5px; 
+}
+
+.texte img {
+    margin-left: 9px;
+}
+
+.texte a
+{
+    color: rgb(139, 137, 137);
+    text-decoration: none;
+}
+
+.menu
+{
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+   /* margin-top: 8.2em;*/
+
+}
+
+.menu li{
+    display: table-cell;
+    padding: 15px ;
+
+}
+
+.menu a
+{
+    color: rgb(130, 127, 127);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 1px 40px;
+
+}
+
+a:hover {
+    color: white;
+
+}
+
+.titre
+{
+    margin-top: 14.5em;
+}
+
+
+
+.titre2 {
+    color: white;
+    display: flex; /* Use flexbox */
+    flex-direction: row;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center;
+
+}
+
+.titre2 a {
+    text-decoration: none; 
+    color: rgb(130, 127, 127);
+    margin: 0 50px; 
+    font-size: 2em;
+}
+
+a:hover {
+    color: white;
+}
+
+/*******************            BLOCS           **********************************/
+
+.grosBloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #7578CF;
+    border-radius: 20px;
+    margin: 8%;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+}
+
+.petitBloc {
+    background-color: rgba(25, 52, 90, 0.85);
+    border-radius: 20px;
+    width: 465px;
+    min-height: 10em;
+    margin: 25px;
+    display: flex;
+    flex-direction: row ;
+    box-shadow: 5px 5px 15px black;
+}
+
+.petitBloc2 {
+    background-color: rgba(25, 52, 90, 0.85);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    min-height: 320px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+
+.childPetitBloc{
+    background-color: #19345A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 15px black;
+    padding: 2px 10px 2px ;
+}
+.childPetitBlocSpe
+{
+    background-color: #19345A;
+    border-radius: 20px;
+    padding: 2px 10px 2px;
+    box-shadow: 5px 5px 15px black;
+}
+.childPetitBloc2
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/*******************            TEXTES          **********************************/
+
+.titre2 {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.paragraphe {
+    text-align: justify;
+    margin-right: 3%;
+}
+
+.sousTitre
+{
+    color: #BAB6B6;
+}
