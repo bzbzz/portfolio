@@ -7,3 +7,4 @@ Projets en C :
 Projets en Python :
 
 Projets en Java :
+  - [Interface Homme-Machine](ihm_sae2_01)
