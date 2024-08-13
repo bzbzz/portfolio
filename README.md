@@ -6,7 +6,7 @@ Projets en C :
 
 Projets en Python :
   - [Analyse de données au sein d'une base de données](analyse_bdd_sae2_04)
-  - [Résolution algorithmique d'un problème concret]()
+  - [Résolution et exploration algorithmique d'un problème](res_8reines_sae2_02)
 
 Projets en Java :
   - [Interface Homme-Machine](ihm_sae2_01)
